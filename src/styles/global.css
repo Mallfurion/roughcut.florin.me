@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: "Montserrat", "Avenir Next", "Segoe UI", sans-serif;
+  --color-rough-bg: #121316;
+  --color-rough-deep: #0d0f12;
+  --color-rough-panel: #191b21;
+  --color-rough-panel-strong: #20242e;
+  --color-rough-border: #2d3340;
+  --color-rough-text: #f5f7fb;
+  --color-rough-muted: #a7b0c0;
+  --color-rough-accent: #5fd1a6;
+  --color-rough-accent-strong: #2fb485;
+  --color-rough-warn: #ffca6b;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background:
+      radial-gradient(circle at 8% 12%, rgba(95, 209, 166, 0.14), transparent 22%), radial-gradient(circle at 88% 10%, rgba(255, 202, 107, 0.12), transparent 18%), radial-gradient(circle at 50% 100%, rgba(95, 209, 166, 0.08), transparent 28%),
+      linear-gradient(180deg, #14161b 0%, var(--color-rough-deep) 100%);
+    color: var(--color-rough-text);
+    font-family: var(--font-sans);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    border: 1px solid rgba(45, 51, 64, 0.92);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent), var(--color-rough-panel);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
+    backdrop-filter: blur(22px);
+  }
+
+  .button-base {
+    display: inline-flex;
+    min-height: 52px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 1px solid var(--color-rough-border);
+    padding-inline: 22px;
+    font-size: 0.96rem;
+    font-weight: 700;
+    transition:
+      transform 180ms ease,
+      border-color 180ms ease,
+      background 180ms ease;
+  }
+
+  .button-base:hover,
+  .button-base:focus-visible {
+    transform: translateY(-1px);
+  }
+
+  .button-primary {
+    border-color: rgba(95, 209, 166, 0.5);
+    background: linear-gradient(135deg, var(--color-rough-accent), #83e7c0);
+    color: #09110e;
+  }
+
+  .button-secondary {
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--color-rough-text);
+  }
+
+  .chip {
+    border: 1px solid rgba(45, 51, 64, 0.92);
+    border-radius: 999px;
+    background: rgba(25, 27, 33, 0.76);
+    padding: 10px 14px;
+    color: #d9dfeb;
+    font-size: 0.9rem;
+  }
+
+  .eyebrow,
+  .detail-kicker {
+    display: inline-block;
+    color: var(--color-rough-accent);
+    font-size: 0.84rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .detail-kicker {
+    margin-bottom: 12px;
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+  }
+
+  .visual-card {
+    transform-style: preserve-3d;
+    transition: transform 220ms ease;
+    will-change: transform;
+  }
+
+  .floating-note {
+    max-width: 220px;
+    border: 1px solid rgba(45, 51, 64, 0.95);
+    border-radius: 18px;
+    background: rgba(18, 19, 22, 0.82);
+    padding: 14px 16px;
+    backdrop-filter: blur(18px);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
+  }
+
+  .floating-note strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1rem;
+    color: var(--color-rough-text);
+  }
+
+  .floating-note span {
+    color: var(--color-rough-muted);
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .workflow-step::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(95, 209, 166, 0.16), transparent 68%);
+  }
+
+  .halo {
+    position: absolute;
+    border-radius: 999px;
+    filter: blur(40px);
+    opacity: 0.7;
+  }
+
+  .halo--mint {
+    top: 44px;
+    right: 28px;
+    width: 180px;
+    height: 180px;
+    background: rgba(95, 209, 166, 0.2);
+  }
+
+  .halo--gold {
+    bottom: 44px;
+    left: 10px;
+    width: 160px;
+    height: 160px;
+    background: rgba(255, 202, 107, 0.16);
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 600ms ease,
+      transform 600ms ease;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
