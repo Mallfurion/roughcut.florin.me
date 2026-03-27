@@ -18,6 +18,8 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#121316" />
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,6 +30,7 @@ const {
     <link rel="icon" href="/logo.svg" type="image/svg+xml" />
   </head>
   <body class="selection:bg-rough-accent selection:text-slate-950">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <slot />
     <script src="../scripts/landing.ts"></script>
   </body>
