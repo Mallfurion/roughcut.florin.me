@@ -1,20 +1,56 @@
 schema: spec-driven
 
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+context: |
+  Product: Roughcut Stdio website.
+  Repository scope: This repository contains the public Astro landing page for Roughcut Stdio. It does not contain the desktop application itself.
 
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+  Product summary:
+  Roughcut Stdio is positioned as a local-first, AI-assisted footage screening and rough-cut workflow for video editors. The product messaging emphasizes scanning raw footage locally, surfacing strong candidate moments, grading segments, assembling a first-pass timeline, and exporting to DaVinci Resolve via FCPXML.
+
+  Audience:
+  - Video editors and post-production teams
+  - Collaborators evaluating the desktop workflow
+  - Developers maintaining the marketing site and product messaging
+
+  Goals for changes:
+  - Preserve the local-first, editor-first positioning
+  - Keep claims grounded in what is actually present in this repository
+  - Maintain the current desktop-first presentation and simplified small-screen fallback
+  - Favor clear product communication over generic AI marketing language
+
+  Tech stack:
+  - Astro 5
+  - TypeScript
+  - Tailwind CSS 4 via the Vite plugin
+  - Static assets served from `public/`
+
+  Key files:
+  - `src/pages/index.astro`: single-page marketing site content and section structure
+  - `src/layouts/Layout.astro`: document shell, metadata, and font loading
+  - `src/styles/global.css`: theme tokens, component classes, and motion styling
+  - `src/scripts/landing.ts`: reveal-on-scroll and hero-card tilt behavior
+  - `openspec/config.yaml`: OpenSpec project guidance for future changes
+
+  Conventions:
+  - Keep copy specific to editorial workflows and post-production language
+  - Preserve the established visual direction: dark, premium, glass-panel UI with restrained motion
+  - Treat the site as a static landing page unless a change explicitly introduces more pages or functionality
+  - Prefer changes that are easy to validate in this repository with `npm run build`
+
+rules:
+  proposal:
+    - Make it explicit whether a change affects the website, project documentation, or only product messaging.
+    - Call out when copy refers to the desktop app, because this repository only contains the marketing site.
+    - Keep proposals concrete and tied to visible user or maintainer outcomes.
+  specs:
+    - Describe observable website behavior, content, responsiveness, accessibility, or contributor workflow.
+    - Distinguish the desktop experience from the intentionally simplified mobile fallback when relevant.
+    - Prefer capabilities that can be verified within this repository.
+  design:
+    - Reference the Astro page/layout split and the current Tailwind-plus-global-CSS styling approach.
+    - Preserve the existing editorial visual language unless a change explicitly rebrands the site.
+    - Note any new assets, metadata, docs, or section-level content changes required to support the design.
+  tasks:
+    - Break work into small, verifiable tasks that can be completed in this repository.
+    - Include validation steps such as `npm run build` for user-facing changes.
+    - Include copy review when changing positioning, claims, or calls to action.
