@@ -1,0 +1,46 @@
+---
+interface Props {
+  kicker: string;
+  body: string;
+  title?: string;
+  cardClass?: string;
+  kickerClass?: string;
+  titleClass?: string;
+  bodyClass?: string;
+  titleTag?: "h3" | "strong";
+}
+
+const {
+  kicker,
+  body,
+  title,
+  cardClass = "",
+  kickerClass = "",
+  titleClass = "",
+  bodyClass = "",
+  titleTag = "strong",
+} = Astro.props;
+
+const TitleTag = titleTag;
+---
+
+<article class:list={["glass-panel rounded-[22px] p-6", cardClass]}>
+  <span class:list={["detail-kicker", kickerClass]}>{kicker}</span>
+  {
+    title && (
+      <TitleTag class:list={["text-rough-text block text-base", titleClass]}>
+        {title}
+      </TitleTag>
+    )
+  }
+  <p
+    class:list={[
+      "text-rough-muted text-sm leading-6",
+      title && "mt-2",
+      bodyClass,
+    ]}
+  >
+    {body}
+  </p>
+  <slot />
+</article>

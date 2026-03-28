@@ -1,0 +1,25 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  body?: string;
+  wrapperClass?: string;
+  titleClass?: string;
+  bodyClass?: string;
+}
+
+const {
+  eyebrow,
+  title,
+  body,
+  wrapperClass = "",
+  titleClass = "",
+  bodyClass = "",
+} = Astro.props;
+---
+
+<div class:list={["reveal", wrapperClass]}>
+  <p class="eyebrow">{eyebrow}</p>
+  <h2 class:list={["section-heading mt-3", titleClass]}>{title}</h2>
+  {body && <p class:list={["lead mt-5", bodyClass]}>{body}</p>}
+</div>

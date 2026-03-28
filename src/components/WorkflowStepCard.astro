@@ -1,0 +1,21 @@
+---
+interface Props {
+  step: string;
+  title: string;
+  body: string;
+}
+
+const { step, title, body } = Astro.props;
+---
+
+<article
+  class="workflow-step reveal glass-panel relative min-h-[220px] overflow-hidden rounded-[22px] p-6"
+>
+  <div
+    class="bg-rough-accent/15 text-rough-accent mb-[18px] inline-flex h-[42px] w-[42px] items-center justify-center rounded-full font-extrabold"
+  >
+    {step}
+  </div>
+  <h3 class="text-rough-text text-[1.32rem] font-bold">{title}</h3>
+  <p class="text-rough-muted mt-2 leading-7">{body}</p>
+</article>
