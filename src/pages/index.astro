@@ -8,23 +8,19 @@ import Layout from "../layouts/Layout.astro";
       <div class="glass-panel pointer-events-auto flex flex-col gap-4 rounded-[28px] px-4 py-4 md:flex-row md:items-center md:justify-between md:px-5">
         <a class="flex w-fit items-center gap-3" href="#top" aria-label="Roughcut Stdio home">
           <img src="/logo.svg" alt="" class="h-10 w-10 rounded-xl" width="1024" height="1024" />
-          <span class="text-base font-bold tracking-[0.02em] text-rough-text">Roughcut Stdio</span>
+          <span class="text-rough-text text-base font-bold tracking-[0.02em]">Roughcut Stdio</span>
         </a>
-        <nav class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-rough-muted" aria-label="Primary">
+        <nav class="text-rough-muted flex flex-wrap items-center gap-x-4 gap-y-2 text-sm" aria-label="Primary">
           <a class="nav-link" href="#top">Overview</a>
           <a class="nav-link" href="#features">Outcomes</a>
           <a class="nav-link" href="#workflow">Workflow</a>
           <a class="nav-link" href="#desktop">Desktop</a>
           <a class="nav-link" href="#setup">Setup</a>
-          <a
-            class="nav-link inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/8 bg-white/[0.03]"
-            href="https://github.com/Mallfurion/roughcut-stdio"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Open Roughcut Stdio repository on GitHub"
-          >
+          <a class="nav-link inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/8 bg-white/[0.03]" href="https://github.com/Mallfurion/roughcut-stdio" target="_blank" rel="noreferrer" aria-label="Open Roughcut Stdio repository on GitHub">
             <svg aria-hidden="true" viewBox="0 0 24 24" class="h-4.5 w-4.5 fill-current">
-              <path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.46c.53.1.72-.23.72-.5v-1.94c-2.96.64-3.58-1.26-3.58-1.26-.48-1.2-1.17-1.52-1.17-1.52-.96-.66.07-.65.07-.65 1.05.08 1.6 1.07 1.6 1.07.94 1.58 2.46 1.13 3.06.86.1-.67.37-1.13.67-1.39-2.36-.27-4.84-1.16-4.84-5.18 0-1.14.42-2.07 1.1-2.8-.1-.27-.48-1.35.1-2.8 0 0 .9-.28 2.95 1.07a10.37 10.37 0 0 1 5.38 0c2.04-1.35 2.94-1.07 2.94-1.07.59 1.45.22 2.53.11 2.8.69.73 1.1 1.66 1.1 2.8 0 4.03-2.48 4.9-4.85 5.17.38.32.72.94.72 1.91v2.83c0 .28.19.61.73.5A10.5 10.5 0 0 0 12 1.5Z" />
+              <path
+                d="M12 1.5a10.5 10.5 0 0 0-3.32 20.46c.53.1.72-.23.72-.5v-1.94c-2.96.64-3.58-1.26-3.58-1.26-.48-1.2-1.17-1.52-1.17-1.52-.96-.66.07-.65.07-.65 1.05.08 1.6 1.07 1.6 1.07.94 1.58 2.46 1.13 3.06.86.1-.67.37-1.13.67-1.39-2.36-.27-4.84-1.16-4.84-5.18 0-1.14.42-2.07 1.1-2.8-.1-.27-.48-1.35.1-2.8 0 0 .9-.28 2.95 1.07a10.37 10.37 0 0 1 5.38 0c2.04-1.35 2.94-1.07 2.94-1.07.59 1.45.22 2.53.11 2.8.69.73 1.1 1.66 1.1 2.8 0 4.03-2.48 4.9-4.85 5.17.38.32.72.94.72 1.91v2.83c0 .28.19.61.73.5A10.5 10.5 0 0 0 12 1.5Z"
+              ></path>
             </svg>
           </a>
         </nav>
@@ -32,12 +28,12 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </header>
 
-  <main id="main-content" class="page-shell space-y-6 pb-24 pt-28 md:pt-32">
+  <main id="main-content" class="page-shell space-y-6 pt-28 pb-24 md:pt-32">
     <section id="top" class="section-anchor grid gap-8 py-8 lg:grid-cols-[0.88fr_minmax(0,1.12fr)] lg:items-center lg:gap-10 xl:gap-12">
       <div class="space-y-7 lg:pt-4">
         <div class="reveal">
           <p class="eyebrow">Footage screening for editors</p>
-          <h1 class="mt-3 max-w-[11ch] text-[clamp(2.9rem,6.8vw,5.2rem)] font-extrabold leading-[0.94] tracking-[-0.045em] text-rough-text">Find the parts of the footage worth your time.</h1>
+          <h1 class="text-rough-text mt-3 max-w-[11ch] text-[clamp(2.9rem,6.8vw,5.2rem)] leading-[0.94] font-extrabold tracking-[-0.045em]">Find the parts of the footage worth your time.</h1>
           <p class="lead mt-5 max-w-[60ch]">
             Roughcut Stdio is a <b>macOS desktop app</b> that scans large media sets locally, refines candidate segments, grades the strongest moments, and assembles a first-pass rough timeline so editors do not have to scrub every clip from start to finish.
           </p>
@@ -65,17 +61,17 @@ import Layout from "../layouts/Layout.astro";
                 <span class="h-2.5 w-2.5 rounded-full bg-white/20"></span>
                 <span class="h-2.5 w-2.5 rounded-full bg-white/20"></span>
               </div>
-              <span class="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-rough-muted">Review Surface</span>
+              <span class="text-rough-muted text-[0.7rem] font-semibold tracking-[0.18em] uppercase">Review Surface</span>
             </div>
             <img src="/app-2.png" alt="Roughcut Stdio desktop review interface showing selected footage, graded sections, and export controls" class="w-full rounded-b-[30px]" width="1503" height="1012" />
           </div>
 
-          <div class="floating-note absolute -right-3 top-[84px] z-10 hidden w-[232px] lg:block">
+          <div class="floating-note absolute top-[84px] -right-3 z-10 hidden w-[232px] lg:block">
             <strong>Review-first</strong>
             <span>Best takes, grades, provenance, and export status in one surface.</span>
           </div>
 
-          <div class="floating-note absolute -left-5 bottom-[78px] z-10 hidden w-[220px] sm:block lg:block">
+          <div class="floating-note absolute bottom-[78px] -left-5 z-10 hidden w-[220px] sm:block lg:block">
             <strong>4-phase pipeline</strong>
             <span>Discover, analyze, select, and assemble without hiding the context.</span>
           </div>
@@ -84,15 +80,15 @@ import Layout from "../layouts/Layout.astro";
         <div class="mt-4 grid gap-3 sm:grid-cols-3">
           <article class="glass-panel rounded-[18px] p-4">
             <span class="detail-kicker">Signals</span>
-            <p class="text-sm leading-6 text-rough-muted">Technical, semantic, and story cues stay visible when reviewing candidate moments.</p>
+            <p class="text-rough-muted text-sm leading-6">Technical, semantic, and story cues stay visible when reviewing candidate moments.</p>
           </article>
           <article class="glass-panel rounded-[18px] p-4">
             <span class="detail-kicker">State</span>
-            <p class="text-sm leading-6 text-rough-muted">Runtime readiness and optional assets are separated so recovery stays legible.</p>
+            <p class="text-rough-muted text-sm leading-6">Runtime readiness and optional assets are separated so recovery stays legible.</p>
           </article>
           <article class="glass-panel rounded-[18px] p-4">
             <span class="detail-kicker">Export</span>
-            <p class="text-sm leading-6 text-rough-muted">The current review state is shaped for an editorial handoff instead of a demo-only flow.</p>
+            <p class="text-rough-muted text-sm leading-6">The current review state is shaped for an editorial handoff instead of a demo-only flow.</p>
           </article>
         </div>
       </div>
@@ -101,18 +97,18 @@ import Layout from "../layouts/Layout.astro";
     <section class="grid gap-4 md:grid-cols-3">
       <article class="reveal glass-panel rounded-[22px] p-5">
         <span class="detail-kicker">Process</span>
-        <strong class="block text-base text-rough-text">4 focused phases</strong>
-        <p class="mt-2 text-sm leading-6 text-rough-muted">Media discovery, per-asset analysis, take selection, and timeline assembly turn raw footage into a usable shortlist.</p>
+        <strong class="text-rough-text block text-base">4 focused phases</strong>
+        <p class="text-rough-muted mt-2 text-sm leading-6">Media discovery, per-asset analysis, take selection, and timeline assembly turn raw footage into a usable shortlist.</p>
       </article>
       <article class="reveal glass-panel rounded-[22px] p-5">
         <span class="detail-kicker">Runtime</span>
-        <strong class="block text-base text-rough-text">Packaged desktop stack</strong>
-        <p class="mt-2 text-sm leading-6 text-rough-muted">The packaged app bundles Python, analyzer resources, and media tools so the core workflow stays local.</p>
+        <strong class="text-rough-text block text-base">Packaged desktop stack</strong>
+        <p class="text-rough-muted mt-2 text-sm leading-6">The packaged app bundles Python, analyzer resources, and media tools so the core workflow stays local.</p>
       </article>
       <article class="reveal glass-panel rounded-[22px] p-5">
         <span class="detail-kicker">Output</span>
-        <strong class="block text-base text-rough-text">Editor stays in control</strong>
-        <p class="mt-2 text-sm leading-6 text-rough-muted">Review shortlisted segments, promote a best take per clip, and export the active timeline into DaVinci Resolve.</p>
+        <strong class="text-rough-text block text-base">Editor stays in control</strong>
+        <p class="text-rough-muted mt-2 text-sm leading-6">Review shortlisted segments, promote a best take per clip, and export the active timeline into DaVinci Resolve.</p>
       </article>
     </section>
 
@@ -128,18 +124,18 @@ import Layout from "../layouts/Layout.astro";
       <div class="grid gap-4 md:grid-cols-3 xl:grid-cols-1">
         <article class="reveal glass-panel rounded-[22px] p-6">
           <span class="detail-kicker">Transcript-aware</span>
-          <strong class="block text-base text-rough-text">Speech support stays local when transcript runtime is available</strong>
-          <p class="mt-2 text-sm leading-6 text-rough-muted">Local transcript extraction can inform segment refinement, speech-aware scoring, and review without turning the workflow into a cloud dependency.</p>
+          <strong class="text-rough-text block text-base">Speech support stays local when transcript runtime is available</strong>
+          <p class="text-rough-muted mt-2 text-sm leading-6">Local transcript extraction can inform segment refinement, speech-aware scoring, and review without turning the workflow into a cloud dependency.</p>
         </article>
         <article class="reveal glass-panel rounded-[22px] p-6">
           <span class="detail-kicker">Review provenance</span>
-          <strong class="block text-base text-rough-text">Segments stay explainable inside the desktop review surface</strong>
-          <p class="mt-2 text-sm leading-6 text-rough-muted">The app preserves how a segment was formed, what signals supported it, and which take is currently active in the assembled timeline.</p>
+          <strong class="text-rough-text block text-base">Segments stay explainable inside the desktop review surface</strong>
+          <p class="text-rough-muted mt-2 text-sm leading-6">The app preserves how a segment was formed, what signals supported it, and which take is currently active in the assembled timeline.</p>
         </article>
         <article class="reveal glass-panel rounded-[22px] p-6">
           <span class="detail-kicker">Graceful fallback</span>
-          <strong class="block text-base text-rough-text">Optional AI paths can degrade without killing the workflow</strong>
-          <p class="mt-2 text-sm leading-6 text-rough-muted">Deterministic analysis still runs when optional assets are unavailable, and the packaged app can step down transcript, CLIP, or local-VLM features as needed.</p>
+          <strong class="text-rough-text block text-base">Optional AI paths can degrade without killing the workflow</strong>
+          <p class="text-rough-muted mt-2 text-sm leading-6">Deterministic analysis still runs when optional assets are unavailable, and the packaged app can step down transcript, CLIP, or local-VLM features as needed.</p>
         </article>
       </div>
     </section>
@@ -151,19 +147,19 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <div class="grid gap-4 lg:grid-cols-3">
         <article class="reveal glass-panel rounded-[22px] p-6">
-          <span class="text-sm font-bold tracking-[0.18em] text-rough-warn">01</span>
-          <h3 class="mt-5 text-[1.32rem] font-bold text-rough-text">Screen large footage sets locally</h3>
-          <p class="mt-2 leading-7 text-rough-muted">Media discovery, proxy matching, frame sampling, audio analysis, and seed-region building all happen on your machine.</p>
+          <span class="text-rough-warn text-sm font-bold tracking-[0.18em]">01</span>
+          <h3 class="text-rough-text mt-5 text-[1.32rem] font-bold">Screen large footage sets locally</h3>
+          <p class="text-rough-muted mt-2 leading-7">Media discovery, proxy matching, frame sampling, audio analysis, and seed-region building all happen on your machine.</p>
         </article>
         <article class="reveal glass-panel rounded-[22px] p-6">
-          <span class="text-sm font-bold tracking-[0.18em] text-rough-warn">02</span>
-          <h3 class="mt-5 text-[1.32rem] font-bold text-rough-text">Grade and compare candidate moments</h3>
-          <p class="mt-2 leading-7 text-rough-muted">Deterministic scoring, optional local AI analysis, and review provenance make it easier to understand why one segment is worth keeping over another.</p>
+          <span class="text-rough-warn text-sm font-bold tracking-[0.18em]">02</span>
+          <h3 class="text-rough-text mt-5 text-[1.32rem] font-bold">Grade and compare candidate moments</h3>
+          <p class="text-rough-muted mt-2 leading-7">Deterministic scoring, optional local AI analysis, and review provenance make it easier to understand why one segment is worth keeping over another.</p>
         </article>
         <article class="reveal glass-panel rounded-[22px] p-6">
-          <span class="text-sm font-bold tracking-[0.18em] text-rough-warn">03</span>
-          <h3 class="mt-5 text-[1.32rem] font-bold text-rough-text">Assemble a first-pass rough timeline</h3>
-          <p class="mt-2 leading-7 text-rough-muted">The result is not a finished edit. It is a stronger starting point with shortlisted shots, best-take control, and a Resolve-oriented export path.</p>
+          <span class="text-rough-warn text-sm font-bold tracking-[0.18em]">03</span>
+          <h3 class="text-rough-text mt-5 text-[1.32rem] font-bold">Assemble a first-pass rough timeline</h3>
+          <p class="text-rough-muted mt-2 leading-7">The result is not a finished edit. It is a stronger starting point with shortlisted shots, best-take control, and a Resolve-oriented export path.</p>
         </article>
       </div>
     </section>
@@ -175,24 +171,24 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <div class="grid gap-4 md:grid-cols-2">
         <article class="workflow-step reveal glass-panel relative min-h-[220px] overflow-hidden rounded-[22px] p-6">
-          <div class="mb-[18px] inline-flex h-[42px] w-[42px] items-center justify-center rounded-full bg-rough-accent/15 font-extrabold text-rough-accent">1</div>
-          <h3 class="text-[1.32rem] font-bold text-rough-text">Media discovery</h3>
-          <p class="mt-2 leading-7 text-rough-muted">Select a media folder, discover supported video files, and match sources to proxies before deeper analysis begins.</p>
+          <div class="bg-rough-accent/15 text-rough-accent mb-[18px] inline-flex h-[42px] w-[42px] items-center justify-center rounded-full font-extrabold">1</div>
+          <h3 class="text-rough-text text-[1.32rem] font-bold">Media discovery</h3>
+          <p class="text-rough-muted mt-2 leading-7">Select a media folder, discover supported video files, and match sources to proxies before deeper analysis begins.</p>
         </article>
         <article class="workflow-step reveal glass-panel relative min-h-[220px] overflow-hidden rounded-[22px] p-6">
-          <div class="mb-[18px] inline-flex h-[42px] w-[42px] items-center justify-center rounded-full bg-rough-accent/15 font-extrabold text-rough-accent">2</div>
-          <h3 class="text-[1.32rem] font-bold text-rough-text">Per-asset analysis</h3>
-          <p class="mt-2 leading-7 text-rough-muted">Extract frame and audio signals, build seed regions, refine segment boundaries, and apply transcript-backed or local-AI analysis when available.</p>
+          <div class="bg-rough-accent/15 text-rough-accent mb-[18px] inline-flex h-[42px] w-[42px] items-center justify-center rounded-full font-extrabold">2</div>
+          <h3 class="text-rough-text text-[1.32rem] font-bold">Per-asset analysis</h3>
+          <p class="text-rough-muted mt-2 leading-7">Extract frame and audio signals, build seed regions, refine segment boundaries, and apply transcript-backed or local-AI analysis when available.</p>
         </article>
         <article class="workflow-step reveal glass-panel relative min-h-[220px] overflow-hidden rounded-[22px] p-6">
-          <div class="mb-[18px] inline-flex h-[42px] w-[42px] items-center justify-center rounded-full bg-rough-accent/15 font-extrabold text-rough-accent">3</div>
-          <h3 class="text-[1.32rem] font-bold text-rough-text">Take selection</h3>
-          <p class="mt-2 leading-7 text-rough-muted">Score the candidate segments, narrow them to the strongest takes per asset, and preserve the reasoning behind each recommendation.</p>
+          <div class="bg-rough-accent/15 text-rough-accent mb-[18px] inline-flex h-[42px] w-[42px] items-center justify-center rounded-full font-extrabold">3</div>
+          <h3 class="text-rough-text text-[1.32rem] font-bold">Take selection</h3>
+          <p class="text-rough-muted mt-2 leading-7">Score the candidate segments, narrow them to the strongest takes per asset, and preserve the reasoning behind each recommendation.</p>
         </article>
         <article class="workflow-step reveal glass-panel relative min-h-[220px] overflow-hidden rounded-[22px] p-6">
-          <div class="mb-[18px] inline-flex h-[42px] w-[42px] items-center justify-center rounded-full bg-rough-accent/15 font-extrabold text-rough-accent">4</div>
-          <h3 class="text-[1.32rem] font-bold text-rough-text">Timeline assembly</h3>
-          <p class="mt-2 leading-7 text-rough-muted">Preview the assembled timeline, promote or clear the best take for each clip, and export the active review state into Resolve via FCPXML.</p>
+          <div class="bg-rough-accent/15 text-rough-accent mb-[18px] inline-flex h-[42px] w-[42px] items-center justify-center rounded-full font-extrabold">4</div>
+          <h3 class="text-rough-text text-[1.32rem] font-bold">Timeline assembly</h3>
+          <p class="text-rough-muted mt-2 leading-7">Preview the assembled timeline, promote or clear the best take for each clip, and export the active review state into Resolve via FCPXML.</p>
         </article>
       </div>
     </section>
@@ -202,8 +198,9 @@ import Layout from "../layouts/Layout.astro";
         <article class="reveal glass-panel rounded-[28px] p-7">
           <p class="eyebrow">Inside the desktop app</p>
           <h2 class="section-heading mt-3 max-w-[14ch]">The review surface is built for selection, not spectacle.</h2>
-          <p class="mt-5 leading-7 text-rough-muted">
-            Roughcut Stdio shows shortlisted segments, transcript excerpts when available, grading signals, segment provenance, and the assembled timeline preview in one place so the editor can refine the first pass instead of reverse-engineering it. The packaged desktop runtime can carry Python, analyzer resources, <code>ffmpeg</code>, and <code>ffprobe</code> so the core workflow stays local.
+          <p class="text-rough-muted mt-5 leading-7">
+            Roughcut Stdio shows shortlisted segments, transcript excerpts when available, grading signals, segment provenance, and the assembled timeline preview in one place so the editor can refine the first pass instead of reverse-engineering it. The packaged desktop runtime can carry
+            Python, analyzer resources, <code>ffmpeg</code>, and <code>ffprobe</code> so the core workflow stays local.
           </p>
           <div class="mt-7 flex flex-wrap gap-3.5">
             <a class="button-base button-primary" href="#setup">Open Setup Steps</a>
@@ -214,19 +211,19 @@ import Layout from "../layouts/Layout.astro";
         <div class="grid gap-4 sm:grid-cols-2">
           <article class="reveal glass-panel rounded-[22px] p-6">
             <span class="detail-kicker">Best-take control</span>
-            <p class="text-sm leading-6 text-rough-muted">The desktop review flow persists best-take overrides per clip so the exported timeline reflects the editor’s current decisions instead of a fixed auto-pick.</p>
+            <p class="text-rough-muted text-sm leading-6">The desktop review flow persists best-take overrides per clip so the exported timeline reflects the editor’s current decisions instead of a fixed auto-pick.</p>
           </article>
           <article class="reveal glass-panel rounded-[22px] p-6">
             <span class="detail-kicker">Resolve handoff</span>
-            <p class="text-sm leading-6 text-rough-muted">Export writes an FCPXML timeline that follows the active desktop review state so the next step can happen inside DaVinci Resolve, not in the browser.</p>
+            <p class="text-rough-muted text-sm leading-6">Export writes an FCPXML timeline that follows the active desktop review state so the next step can happen inside DaVinci Resolve, not in the browser.</p>
           </article>
           <article class="reveal glass-panel rounded-[22px] p-6">
             <span class="detail-kicker">Packaged mode</span>
-            <p class="text-sm leading-6 text-rough-muted">Bundled runtime resources and app-managed storage let packaged builds keep processing without a checked-out repository.</p>
+            <p class="text-rough-muted text-sm leading-6">Bundled runtime resources and app-managed storage let packaged builds keep processing without a checked-out repository.</p>
           </article>
           <article class="reveal glass-panel rounded-[22px] p-6">
             <span class="detail-kicker">Graceful fallback</span>
-            <p class="text-sm leading-6 text-rough-muted">Optional transcript, CLIP, or local-VLM paths can step down when assets are missing so startup and review do not dead-end.</p>
+            <p class="text-rough-muted text-sm leading-6">Optional transcript, CLIP, or local-VLM paths can step down when assets are missing so startup and review do not dead-end.</p>
           </article>
         </div>
       </div>
@@ -237,11 +234,11 @@ import Layout from "../layouts/Layout.astro";
         <article class="reveal glass-panel h-full rounded-[28px] p-7">
           <p class="eyebrow">Quick start</p>
           <h2 class="section-heading mt-3">Get from clone to desktop review fast.</h2>
-          <p class="mt-5 leading-7 text-rough-muted">
+          <p class="text-rough-muted mt-5 leading-7">
             On macOS, the repository workflow starts with setup and then launches the desktop app. From there the tool becomes an editor-facing review flow: choose footage, process it, inspect the shortlisted takes, and export the current timeline state.
           </p>
           <div class="mt-6 rounded-[22px] border border-white/8 bg-black/20 p-5">
-            <pre class="overflow-x-auto text-sm leading-7 text-rough-text"><code>git clone https://github.com/Mallfurion/roughcut-stdio.git
+            <pre class="text-rough-text overflow-x-auto text-sm leading-7"><code>git clone https://github.com/Mallfurion/roughcut-stdio.git
 cd roughcut-stdio
 npm run setup
 npm run view</code></pre>
@@ -251,25 +248,25 @@ npm run view</code></pre>
         <div class="grid gap-4 sm:auto-rows-fr sm:grid-cols-2">
           <article class="reveal glass-panel h-full rounded-[22px] p-6">
             <span class="detail-kicker">In the app</span>
-            <p class="text-sm leading-6 text-rough-muted">Choose a media folder, click Process, review shortlisted shots and grades, and export the active desktop timeline.</p>
+            <p class="text-rough-muted text-sm leading-6">Choose a media folder, click Process, review shortlisted shots and grades, and export the active desktop timeline.</p>
           </article>
           <article class="reveal glass-panel h-full rounded-[22px] p-6">
             <span class="detail-kicker">Export</span>
-            <p class="text-sm leading-6 text-rough-muted">The export action rebuilds the timeline from the current review state and writes an FCPXML file for DaVinci Resolve.</p>
+            <p class="text-rough-muted text-sm leading-6">The export action rebuilds the timeline from the current review state and writes an FCPXML file for DaVinci Resolve.</p>
           </article>
           <article class="reveal glass-panel h-full rounded-[22px] p-6 sm:col-span-2">
             <span class="detail-kicker">Repository workflow</span>
-            <p class="text-sm leading-6 text-rough-muted">The checked-out repo path is useful for development and testing, while packaged builds preserve the same core review model with app-managed resources and outputs.</p>
+            <p class="text-rough-muted text-sm leading-6">The checked-out repo path is useful for development and testing, while packaged builds preserve the same core review model with app-managed resources and outputs.</p>
           </article>
           <article class="beta-card reveal glass-panel relative h-full overflow-hidden rounded-[22px] p-6 sm:col-span-2">
             <div class="beta-card__orb" aria-hidden="true"></div>
             <div class="beta-card__grid relative gap-5">
               <div>
                 <span class="detail-kicker">Desktop beta</span>
-                <h3 class="max-w-[14ch] text-[clamp(1.6rem,3vw,2.4rem)] font-extrabold leading-[0.94] tracking-[-0.045em] text-rough-text">
+                <h3 class="text-rough-text max-w-[14ch] text-[clamp(1.6rem,3vw,2.4rem)] leading-[0.94] font-extrabold tracking-[-0.045em]">
                   Standalone desktop app now in <span class="text-rough-warn">Beta</span>.
                 </h3>
-                <p class="mt-3 max-w-[34ch] text-base leading-7 text-rough-muted">Stable release coming soon.</p>
+                <p class="text-rough-muted mt-3 max-w-[34ch] text-base leading-7">Stable release coming soon.</p>
               </div>
               <div class="beta-card__status" aria-label="Current desktop release status">
                 <span class="beta-card__dot" aria-hidden="true"></span>
@@ -285,18 +282,18 @@ npm run view</code></pre>
       <div class="glass-panel relative overflow-hidden rounded-[30px] px-7 py-10 md:px-10">
         <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(95,209,166,0.2),transparent_32%),radial-gradient(circle_at_bottom_left,rgba(255,202,107,0.14),transparent_24%)]"></div>
         <div class="relative grid gap-x-10 gap-y-5 lg:grid-cols-[60%_35%] lg:grid-rows-[auto_auto] lg:items-start">
-          <div class="space-y-6 lg:row-start-1 lg:col-start-1">
+          <div class="space-y-6 lg:col-start-1 lg:row-start-1">
             <p class="eyebrow">Next step</p>
             <h2 class="section-heading mt-3 max-w-4xl lg:text-5xl xl:text-7xl">Start with a media folder. Leave with a rough cut you can keep editing.</h2>
           </div>
 
-          <div class="h-full flex flex-col justify-center glass-panel overflow-hidden rounded-[24px] border-white/8 bg-black/10 shadow-[0_24px_80px_rgba(0,0,0,0.26)] lg:row-start-1 lg:col-start-2 lg:self-start">
+          <div class="glass-panel flex h-full flex-col justify-center overflow-hidden rounded-[24px] border-white/8 bg-black/10 shadow-[0_24px_80px_rgba(0,0,0,0.26)] lg:col-start-2 lg:row-start-1 lg:self-start">
             <img src="/app.png" alt="Roughcut Stdio desktop app showing the review surface and assembled timeline" class="w-full object-cover object-left-top" width="1475" height="1015" />
           </div>
 
-          <p class="lead max-w-3xl lg:row-start-2 lg:col-start-1 lg:self-center">Everything on this page is aimed at the actual handoff: how Roughcut Stdio screens footage, behaves as a desktop runtime, and gets you to a Resolve-ready rough cut faster.</p>
+          <p class="lead max-w-3xl lg:col-start-1 lg:row-start-2 lg:self-center">Everything on this page is aimed at the actual handoff: how Roughcut Stdio screens footage, behaves as a desktop runtime, and gets you to a Resolve-ready rough cut faster.</p>
 
-          <div class="grid grid-cols-2 gap-3.5 lg:row-start-2 lg:col-start-2 lg:self-center">
+          <div class="grid grid-cols-2 gap-3.5 lg:col-start-2 lg:row-start-2 lg:self-center">
             <a class="button-base button-primary w-full px-5 text-center leading-tight" href="#setup">Open Setup</a>
             <a class="button-base button-secondary w-full px-5 text-center leading-tight" href="#desktop">Desktop Runtime</a>
           </div>

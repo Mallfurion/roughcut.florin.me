@@ -1,4 +1,6 @@
-const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const prefersReducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)",
+);
 const hasFinePointer = window.matchMedia("(pointer: fine)");
 const canAnimate = !prefersReducedMotion.matches;
 
@@ -7,7 +9,8 @@ const visualCard = tiltCard?.querySelector<HTMLElement>(".visual-card");
 
 if (canAnimate && hasFinePointer.matches && tiltCard && visualCard) {
   const resetTilt = () => {
-    visualCard.style.transform = "perspective(1400px) rotateX(0deg) rotateY(0deg) scale(1)";
+    visualCard.style.transform =
+      "perspective(1400px) rotateX(0deg) rotateY(0deg) scale(1)";
   };
 
   tiltCard.addEventListener("pointermove", (event) => {

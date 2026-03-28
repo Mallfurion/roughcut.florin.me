@@ -28,9 +28,21 @@
     min-height: 100vh;
     overflow-x: hidden;
     background:
-      radial-gradient(circle at 8% 12%, rgba(95, 209, 166, 0.14), transparent 22%),
-      radial-gradient(circle at 88% 10%, rgba(255, 202, 107, 0.12), transparent 18%),
-      radial-gradient(circle at 50% 100%, rgba(95, 209, 166, 0.08), transparent 28%),
+      radial-gradient(
+        circle at 8% 12%,
+        rgba(95, 209, 166, 0.14),
+        transparent 22%
+      ),
+      radial-gradient(
+        circle at 88% 10%,
+        rgba(255, 202, 107, 0.12),
+        transparent 18%
+      ),
+      radial-gradient(
+        circle at 50% 100%,
+        rgba(95, 209, 166, 0.08),
+        transparent 28%
+      ),
       linear-gradient(180deg, #14161b 0%, var(--color-rough-deep) 100%);
     color: var(--color-rough-text);
     font-family: var(--font-sans);
@@ -74,7 +86,9 @@
 
   .glass-panel {
     border: 1px solid rgba(45, 51, 64, 0.92);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent), var(--color-rough-panel);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent),
+      var(--color-rough-panel);
     box-shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
     backdrop-filter: blur(22px);
   }
@@ -210,7 +224,11 @@
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(95, 209, 166, 0.16), transparent 68%);
+    background: radial-gradient(
+      circle,
+      rgba(95, 209, 166, 0.16),
+      transparent 68%
+    );
   }
 
   .halo {
@@ -257,8 +275,12 @@
     width: 180px;
     height: 180px;
     border-radius: 999px;
-    background:
-      radial-gradient(circle, rgba(255, 202, 107, 0.28) 0%, rgba(255, 202, 107, 0.18) 24%, rgba(255, 202, 107, 0) 68%);
+    background: radial-gradient(
+      circle,
+      rgba(255, 202, 107, 0.28) 0%,
+      rgba(255, 202, 107, 0.18) 24%,
+      rgba(255, 202, 107, 0) 68%
+    );
     filter: blur(10px);
     opacity: 0.95;
     pointer-events: none;
